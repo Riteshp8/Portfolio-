@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Riteshh | Java Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef1f6;--surface:#fff;--ink:#14213d;--muted:#52607a;--line:#d3d9e4;--accent:#2f4bff;--accent-ink:#fff;--key:#1d6b4f;--str:#a8452a;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1524;--surface:#18203a;--ink:#e8ecf6;--muted:#9aa6c0;--line:#2a3452;--accent:#7f93ff;--accent-ink:#0f1524;--key:#6fd0a4;--str:#f0a58b}}
+:root[data-theme="dark"]{--bg:#0f1524;--surface:#18203a;--ink:#e8ecf6;--muted:#9aa6c0;--line:#2a3452;--accent:#7f93ff;--accent-ink:#0f1524;--key:#6fd0a4;--str:#f0a58b}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "IBM Plex Sans",system-ui,sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+header.nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font:800 20px "Bricolage Grotesque",sans-serif;text-decoration:none}
+.nav nav{display:flex;gap:22px;font-size:15px}
+.nav nav a{text-decoration:none;color:var(--muted)}
+.nav nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center;padding:56px 0 88px}
+h1{font:800 clamp(42px,6.4vw,76px)/1 "Bricolage Grotesque",sans-serif;letter-spacing:-.03em;margin:0 0 20px}
+.lede{font-size:19px;color:var(--muted);max-width:30em;margin:0 0 28px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 22px;border-radius:8px;font-weight:500;text-decoration:none;border:1.5px solid var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
+.btn:hover{transform:translateY(-1px)}
+.api{background:var(--surface);border:1.5px solid var(--ink);border-radius:10px;font:400 14.5px/1.7 "IBM Plex Mono",monospace;overflow:hidden;box-shadow:6px 6px 0 var(--accent)}
+.api .req{padding:12px 18px;border-bottom:1.5px solid var(--ink);display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.api .m{font-weight:500;color:var(--accent)}
+.api .st{color:var(--key)}
+.api pre{margin:0;padding:16px 18px;overflow-x:auto;white-space:pre}
+.k{color:var(--key)}.s{color:var(--str)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font:700 clamp(28px,4vw,40px)/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em;margin:0 0 36px}
+.projects{display:grid;gap:20px}
+.proj{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:28px;display:grid;grid-template-columns:1fr auto;gap:8px 32px}
+.proj h3{font:700 24px "Bricolage Grotesque",sans-serif;margin:0}
+.proj p{margin:6px 0 0;max-width:62ch}
+.proj .hard{color:var(--muted);font-size:15.5px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;grid-column:1/-1}
+.tags span{font:400 13px "IBM Plex Mono",monospace;border:1px solid var(--line);border-radius:6px;padding:3px 9px;color:var(--muted)}
+.links{display:flex;gap:16px;align-items:flex-start;font-weight:500}
+.links a{color:var(--accent)}
+.status{font:500 13px "IBM Plex Mono",monospace;color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:28px}
+.skills h3{font:700 18px "Bricolage Grotesque",sans-serif;margin:0 0 10px}
+.skills ul{list-style:none;margin:0;padding:0;color:var(--muted)}
+.skills li{padding:3px 0}
+.about p{max-width:60ch;margin:0 0 14px}
+.contact{text-align:left}
+.contact .big{font:800 clamp(26px,5vw,52px)/1.1 "Bricolage Grotesque",sans-serif;letter-spacing:-.02em;word-break:break-word}
+.contact .row{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:820px){.hero{grid-template-columns:1fr;padding:32px 0 56px}.proj{grid-template-columns:1fr}.nav nav{gap:14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="nav">
+  <a class="logo" href="#top">Riteshh</a>
+  <nav aria-label="Primary"><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div>
+    <h1>I build Java backends that hold up under load.</h1>
+    <p class="lede">Java full stack developer. Spring Boot, REST APIs, and databases, with a focus on concurrency and clean API design.</p>
+    <div class="btns">
+      <a class="btn primary" href="#projects">See my projects</a>
+      <a class="btn" href="#" aria-label="Download resume (add your resume link)">Download resume</a>
+    </div>
+  </div>
+  <div class="api" aria-label="Sample API response describing Riteshh">
+    <div class="req"><span><span class="m">GET</span> /developers/riteshh</span><span class="st">200 OK</span></div>
+<pre>{
+  <span class="k">"role"</span>: <span class="s">"Java Full Stack Developer"</span>,
+  <span class="k">"backend"</span>: [<span class="s">"Java"</span>, <span class="s">"Spring Boot"</span>,
+              <span class="s">"Hibernate/JPA"</span>],
+  <span class="k">"also"</span>: [<span class="s">"Python"</span>, <span class="s">"React"</span>],
+  <span class="k">"projects"</span>: 4,
+  <span class="k">"openToWork"</span>: true
+}</pre>
+  </div>
+</div>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects">
+    <article class="proj">
+      <div>
+        <h3>Event Ticket Booking System</h3>
+        <p>Booking platform where two people can never buy the same seat.</p>
+        <p class="hard">Hard problem: preventing double-booking when many users hit the same seat at once, solved with Redis distributed locks.</p>
+      </div>
+      <div class="links"><a href="#">Live demo</a><a href="#">GitHub</a></div>
+      <div class="tags"><span>Java 17</span><span>Spring Boot</span><span>PostgreSQL</span><span>Redis</span><span>JWT</span><span>Docker</span><span>React</span></div>
+    </article>
+
+    <article class="proj">
+      <div>
+        <h3>Real-Time Collaborative Code Review Tool</h3>
+        <p>Reviewers comment on the same code together and see changes instantly.</p>
+        <p class="hard">Hard problem: keeping edits consistent when two people change the same thing, using version tracking and Redis Pub/Sub.</p>
+      </div>
+      <div class="links"><span class="status">In progress</span><a href="#">GitHub</a></div>
+      <div class="tags"><span>WebSocket / STOMP</span><span>Redis Pub/Sub</span><span>PostgreSQL</span><span>Spring Boot</span></div>
+    </article>
+
+    <article class="proj">
+      <div>
+        <h3>AI Policy Q&amp;A Chatbot</h3>
+        <p>Ask questions about policy documents and get answers with citations. College team project, four members.</p>
+        <p class="hard">Hard problem: finding the right passage across many documents with hybrid keyword and semantic search.</p>
+      </div>
+      <div class="links"><a href="#">Live demo</a><a href="#">GitHub</a></div>
+      <div class="tags"><span>Python</span><span>FastAPI</span><span>RAG</span><span>Gemini</span></div>
+    </article>
+
+    <article class="proj">
+      <div>
+        <h3>Full Stack E-commerce Website</h3>
+        <p>Online store with product catalog, cart, and checkout backed by a REST API.</p>
+        <p class="hard">Edit this line: one specific problem you solved here.</p>
+      </div>
+      <div class="links"><a href="#">Live demo</a><a href="#">GitHub</a></div>
+      <div class="tags"><span>Java</span><span>Spring Boot</span><span>REST API</span></div>
+    </article>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div><h3>Backend</h3><ul><li>Java</li><li>Spring Boot</li><li>REST APIs</li><li>Hibernate / JPA</li><li>Spring Security, JWT</li></ul></div>
+    <div><h3>Data</h3><ul><li>PostgreSQL</li><li>Redis</li></ul></div>
+    <div><h3>Frontend</h3><ul><li>React</li><li>Tailwind CSS</li></ul></div>
+    <div><h3>Tools</h3><ul><li>Git and GitHub</li><li>Docker</li><li>Swagger</li><li>Python</li></ul></div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <h2>About</h2>
+  <p>I'm a fresher who learns by building. I work mostly in Java and Spring Boot, and I like problems where correctness matters, like two users booking one seat.</p>
+  <p>I'm looking for a Java full stack developer role where I can ship real features and learn from a strong team.</p>
+  <p>Outside code, I follow football and run a football YouTube channel.</p>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact</h2>
+  <div class="big">Let's talk about a role.</div>
+  <div class="row">
+    <a class="btn primary" href="mailto:you@example.com">Email me</a>
+    <a class="btn" href="#">LinkedIn</a>
+    <a class="btn" href="#">GitHub</a>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Riteshh</footer>
+</div>
+</body>
+</html>
